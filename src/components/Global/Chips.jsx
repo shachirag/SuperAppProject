@@ -2,7 +2,7 @@ import React from "react";
 import "./Chips.css";
 const Chips = ({ color, id, setCategories, categories }) => {
   const handleClick = (categoryId) => {
-    const index = categories.indexOf(id);
+    const index = categories.indexOf(categoryId);
     categories.splice(index, 1);
     setCategories([...categories]);
   };
@@ -15,7 +15,7 @@ const Chips = ({ color, id, setCategories, categories }) => {
           style={{
             background: `${color}`,
           }}
-          onClick={handleClick}
+          onClick={() => handleClick(category)}
         >
           {category} <span>X</span>
         </button>
