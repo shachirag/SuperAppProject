@@ -1,0 +1,104 @@
+.body {
+  background: #1e1e1e;
+  color: white;
+  width: 50vw;
+  height: 100vh;
+  padding: 6vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+.body p {
+  font-size: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.body .super {
+  color: #72db73;
+  font-size: 3rem;
+  margin-bottom: 0.9375rem;
+}
+
+form input {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.75rem;
+  width: 70%;
+  background-color: #292929;
+  border: none;
+  border-radius: 0.375rem;
+  color: white;
+}
+
+form label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.875;
+  margin-top: 0.75rem;
+  color: #7C7C7C;
+}
+
+form label input {
+  margin: 0px;
+  padding: 0px;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+form button {
+  box-shadow: none;
+  width: 70%;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  padding: 0.625rem 0.75rem;
+  color: white;
+  background-color: #72db73;
+  border: none;
+  cursor: pointer;
+}
+
+.footer p {
+  font-size: 0.875rem;
+  color: #7c7c7c;
+  width: 70%;
+  margin: 0.75rem auto;
+  text-align: left;
+  line-height: 1.2rem;
+}
+
+.error {
+  border: 0.0625rem solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75rem;
+  margin: 0.125rem 0 0.625rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .body {
+    padding: 10vw;
+    width: 90vw;
+  }
+
+  .body p {
+    font-size: 1rem;
+  }
+
+  .body .super {
+    font-size: 2rem;
+  }
+
+  form input {
+    width: 90%;
+  }
+
+  form button {
+    font-size: 0.75rem;
+  }
+
+  .footer p {
+    width: 90%;
+  }
+}

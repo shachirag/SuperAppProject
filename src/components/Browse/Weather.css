@@ -1,0 +1,149 @@
+.weather-container {
+  width: 30vw;
+  min-height: 20vh;
+  background: #101744;
+  border-radius: 0.75rem;
+  margin-top: 0.3125rem;
+}
+
+.weather-header {
+  height: 7vh;
+  background: #ff4ade;
+  border-radius: 0.75rem;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.weather-date {
+  margin-right: 1rem;
+}
+
+.weather-time {
+  margin-left: 1rem;
+}
+
+.weather-details {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.weather-icon {
+  display: flex;
+  align-items: center;
+}
+
+.weather-icon img {
+  width: 2rem;
+  height: 1.875rem;
+}
+
+.weather-condition {
+  margin-left: 0.5rem;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weather-temperature {
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  margin-top: 0.625rem;
+}
+
+.weather-pressure,
+.weather-wind,
+.weather-humidity {
+  margin-bottom: 0.5rem;
+}
+
+/* For screens smaller than 768px (i.e. mobile devices) */
+@media (max-width: 767px) {
+  .weather-container {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  
+  .weather-header {
+    height: 10vh;
+    font-size: 1.5rem;
+  }
+  
+  .weather-date,
+  .weather-time {
+    font-size: 1rem;
+  }
+  
+  .weather-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .weather-condition {
+    font-size: 1rem;
+  }
+  
+  .weather-info {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .weather-temperature {
+    font-size: 2rem;
+  }
+  
+  .weather-pressure,
+  .weather-wind,
+  .weather-humidity {
+    font-size: 1rem;
+  }
+}
+
+/* For screens larger than 768px (i.e. desktop devices) */
+@media (min-width: 768px) {
+  .weather-container {
+    width: 30vw;
+    margin-top: 0.3125rem;
+  }
+  
+  .weather-header {
+    height: 6vh;
+    font-size: 2rem;
+  }
+  
+  .weather-date,
+  .weather-time {
+    font-size: 1.5rem;
+  }
+  
+  .weather-icon img {
+    width: 2rem;
+    height: 1.875rem;
+  }
+  
+  .weather-condition {
+    font-size: 1.5rem;
+  }
+  
+  .weather-info {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+  }
+  
+  .weather-temperature {
+    font-size: 3rem;
+  }
+  
+  .weather-pressure,
+  .weather-wind,
+  .weather-humidity {
+    font-size: 1.5rem;
+  }
+}

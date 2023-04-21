@@ -1,0 +1,101 @@
+.body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+}
+
+.right {
+  width: 40vw;
+  max-height: 80vh;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.left {
+  width: 50vw;
+  height: 80vh;
+  padding-top: 10vh;
+  text-align: center;
+  padding-left: 5vw;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 5rem;
+  color: green;
+}
+
+.subHeading {
+  font-size: 3rem;
+  color: white;
+  text-align: left;
+  margin-top: 4vh;
+}
+
+.signUp {
+  color: white;
+  background: green;
+  border-radius: 0.75rem;
+  position: absolute;
+  bottom: 1vh;
+  right: 0vw;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+/* Media queries for tablet screens */
+@media only screen and (min-width: 768px) {
+  .body {
+    flex-direction: column;
+  }
+
+  .right {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .left {
+    width: 100%;
+    height: auto;
+    padding-top: 5vh;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+  }
+
+  .subHeading {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+/* Media queries for desktop screens */
+@media only screen and (min-width: 1024px) {
+  .body {
+    flex-direction: row;
+  }
+
+  .right {
+    width: 60vw;
+    max-height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .left {
+    width: 40vw;
+    height: 100vh;
+    padding-top: 10vh;
+    text-align: center;
+    padding-left: 5vw;
+  }
+
+  .heading {
+    font-size: 5rem;
+  }
+}
